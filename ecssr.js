@@ -8,60 +8,126 @@ function diceRoll(numSides){
 	let dice = Math.floor(Math.random() * numSides) +1
 	return dice;
 }
-functon level(){
 
-}
-function checkValidity(userInput){
-	let isValid = true;
-	let max = 20;
-	if(userInput > max){
-		alert("That's not a dice option. Please re-enter a logical number.");
-		while(userInput > max){
-			userInput = prompt("Please enter a number thats between 1 and 20 and NOT 1,2,3,5,7,9,11,13,14,15,16,17,18, or 19.");
-		}
-	}
-	return userInput;
-}
-function runGame(){
-	let playerName = prompt("Please enter your name");
-	let userInput = window.prompt("Choose your lucky number(1-20)");
-	alert(checkValidity(userInput));
-	alert("Welcome to the most frustra.. I mean fun, single-day simulation of Mada's life! Throw your free-will aside for this short and funny game/story that follows a nerd looking to level up his coding/developer skills to over 9000. Before mastering his skills and landing a job, he must first master his Daily Grind, typically consisting of waking up, eating, coding, shitting, sleeping, and repeating. Please click ok to continue and see if you can make it through Mada's Daily Grind!")
+// function checkValidity(userInput){
+// 	let isValid = true;
+// 	let max = 20;
+// 	if(userInput > max){
+// 		alert("That's not a dice option. Please re-enter a logical number.");
+// 		while(userInput > max){
+// 			userInput = prompt("Please enter a number thats between 1 and 20 and NOT 1,2,3,5,7,9,11,13,14,15,16,17,18, or 19.");
+// 		}
+// 	}
+// 	return userInput;
+// }
 
-	alert(diceRoll(userInput));
+// function runGame(){
+// 	let playerName = prompt("Please enter your name");
+// 	let userInput = window.prompt("Choose your lucky number(1-20)");
+// 	alert(checkValidity(userInput));
+// 	alert("Welcome to the most frustra.. I mean fun, single-day simulation of Mada's life! Throw your free-will aside for this short and funny game/story that follows a nerd looking to level up his coding/developer skills to over 9000. Before mastering his skills and landing a job, he must first master his Daily Grind, typically consisting of waking up, eating, coding, shitting, sleeping, and repeating. Please click ok to continue and see if you can make it through Mada's Daily Grind!")
 
-}
-function levelOne(){
-
-}
-
-function levelTwo(){
-
-}
-function levelThree(){
-
-}
-function levelFour(){
-
-}
-function levelFive(){
-
-}
-function levelSix(){
-
-}
-
-
-alert("Goooooood Morning! The alarm is set for 5:45am but, of course, my internal clock decided on 5:32am. What should I do?");
-prompt("1. Go back to sleep, 13min is like 260 dream minutes.  2. Lay in bed and try to NOT fall back asleep.  3. Just get up, do some stretching; don't let myself fall back asleep. (Please enter number that corresponds with your response on the next popup)");
-// 1. Andddd I slept through the alarm.. I no longer have time to shower and might not have time to eat 2. That was a lame 13 minutes but hey I've got time to shower and eat breakfast; I'll have to buy lunch later today. 3. Ahhhh, just what I needed! I've even got time to shower, eat, and prep lunch if I choose(ha!)!
-alert("To eat, or not to eat, that is the question. Obviously TO EAT is the right answer, but what am I going to do?");
-prompt("Off to class! Music makes everything better, what should I listen to on the way? p.s. I'm pretty open as long as it's NOT country.");
-alert("Yeah.. So I take back my previous statement.. music makes everything better.. EXCEPT when you're the DJ.. wtf is that?! I've never puked out of my ears before but hey; there's a first time for everything?");
-alert("")
-alert()
-alert()
-alert()
+// 	alert(diceRoll(userInput));
+// }
 
 // run game
-runGame();
+// runGame();
+
+
+
+// levelOne
+// perfect sequenced answers = 2,3,1,3 (totals 9)
+function levelOne(){
+	alert("Welcome to the most frustra.. I mean fun, single-day simulation of Mada's life! Throw your free-will aside for this short and funny game/story that follows a nerd looking to level up his coding/developer skills to over 9000. Before mastering his skills and landing a job, he must first master his Daily Grind, typically consisting of waking up, eating, coding, shitting, sleeping, and repeating. Please click ok to continue and see if you can make it through Mada's Daily Grind!");
+	let lvlOneArray = ["inputLvl", "inputLvll", "inputLvlll", "inputLvllll"];
+	let playerName = prompt("Please enter your name.");
+	inputLvl = prompt("Goooooood Morning! The alarm is set for 5:45am but, of course, your internal clock decided on 5:32am. What should you do?1. Go back to sleep, 13 minutes is like 260 dream minutes.  2. Lay in bed and try to NOT fall back asleep.  3. Just get up, do some stretching; don't let yourself fall back asleep.");
+		if(lvlOneArray[0] = 1){
+			alert("Andddd I slept through the alarm.. I no longer have time to shower and might not have time to eat");
+		} else if(lvlOneArray[0] = 2){
+			alert("That was a lame 13 minutes but hey I've got time to make lunch and get breakfast on the way; thankfully I showered last night.");
+		} else(lvlOneArray[0] = 3){
+			alert("Ahhhh, just what I needed! I've even got time to shower, eat, and prep lunch!");
+		}
+	inputLvll = prompt("To eat, or not to eat, that is the question. Obviously TO EAT is the right answer, but what are you going to do?  1. Who has time for breakfast? I'll buy food when I get hungry later  2. Have some cereal before I leave and worry about lunch later.  3. Pack a lunch and get a few cliff bars on the way.");
+		if(lvlOneArray[1] = 1){
+			alert("Food is energy, food is life! Did you forget I'm hypoglycemic?! You already passed out, GAMEOVER.")levelOne();
+		} else if(lvlOneArray[1] = 2){
+			alert("They're GRRRREATTTT! Tasty and nestalgic.");
+		} else(lvlOneArray[1] = 3){
+			alert("Yummmm, PB&Js on deck! The cliff bars will help jump start the day.");
+		}
+ 	prompt("Off to class! Music makes everything better, what should I listen to on the way? p.s. I'm pretty open as long as it's NOT country.");
+ 	alert("Yeah.. So I take back my previous statement.. music makes everything better.. EXCEPT when you're the DJ.. wtf is that?! I've never puked out of my ears before but hey; there's a first time for everything?");
+ 	inputLvlll = prompt("Anyway, back to the drive. I've got two options: 1. take the highway, or 2. take city streets");
+	alert("Good call, traffic could get crazy if I took any other route");
+	inputLvllll = prompt("Parking is always a pain in the ass.. How should I handle this? 1.Look for road-side meter parking.  2.Take a gamble and park in the cul-de-sac.  3.Pay $10 for day parking in the Public Market lot..");
+		if(lvlOneArray[3] = 1){
+			alert("Wow, you actually caught a break and snagged a spot right in front of the building.");
+		} else if(lvlOneArray[3] = 2){
+			alert("You've gotten away with this in the past, but NOT TODAY said Karma. Ticketed, towed, blownup.. GAMEOVER.")levelOne();
+		} else(lvlOneArray[3] = 3){
+			alert("The price pisses you off but hey, at least you can't get towed!");
+		}
+	inputLvlllll = prompt("How was getting ready this morning? It's time for the first roll of the day; a 4-sided dice! What number do you want to roll for? (1-4)");
+		alert(inputLvlllll);
+		if(lvlOneArray.split("") = "2""3""1""3"){
+			alert("Ohhhh snappppp, you chose the best possible actions for this level, you can bypass the first dice roll!")levelTwo(); 
+		}
+		if(inputLvlllll = diceRoll(4)){
+			alert("Congrats! The rolled number matches your number!");
+		} else(inputLvlllll != diceRoll(4)){
+			alert("Offff that rough, numbers did not match. GAMEOVER")levelOne();
+		}
+	// console.log(lvlOneArray.toString);
+}
+
+levelOne();
+
+
+// console.log(lvlOneArray);
+
+// levelTwo
+function levelTwo(){
+	alert("Congrats on making it to Level 2! Who know a morning could be so frustrating?");
+
+}
+
+levelTwo();
+
+
+
+// levelThree
+function levelThree(){
+	alert("Congrats on making it to Level 3!");
+}
+
+levelThree();
+
+
+
+// levelFour
+function levelFour(){
+	alert("Congrats on making it to Level 4!");
+}
+
+levelFour();
+
+
+
+// levelFive
+function levelFive(){
+	alert("Congrats on making it to Level 5!");
+}
+
+levelFive();
+
+
+
+// levelSix
+function levelSix(){
+	alert("Congrats on making it to the last level!");
+}
+
+levelSix();
+
