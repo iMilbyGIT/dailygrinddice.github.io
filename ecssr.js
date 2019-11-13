@@ -166,10 +166,58 @@ function levelTwo(){
 //levelTwo();
 
 
-
+// perfect sequenced answers = 2, 2, 1, 2 (totals 7)
+// console.log(lvlThreeArray);
 // levelThree
 function levelThree(){
-	alert("Congrats on making it to Level 3!");
+	alert("Congrats on making it to Level 3! Who knew a morning could be so frustrating?");
+	let lvlThreeArray = [];
+	let input3Lvl = prompt("");
+		lvlThreeArray.push(input3Lvl);
+		if(input3Lvl == "1"){
+			alert("");
+		} else if(input3Lvl == "2"){
+			alert("");
+		} else if(input3Lvl == "3"){
+			alert("");
+		}
+	let input3Lvll = prompt("");
+		lvlThreeArray.push(input3Lvll);
+		if(input3Lvll == 1){
+			alert("");
+			levelThree();
+		} else if(input3Lvll == 2){
+			alert("");
+		} else if(input3Lvll == 3){
+			alert("");
+		}
+ 	prompt("");
+ 	alert("");
+ 	let input3Lvlll = prompt("");
+		lvlThreeArray.push(input3Lvlll);
+	alert("");
+	 let input3Lvllll = prompt("");
+		lvlThreeArray.push(input3Lvllll)
+		if(input3Lvllll == 1){
+			alert("");
+		} else if(input3Lvllll == 2){
+			alert("");
+			levelThree();
+		} else if(input3Lvllll == 3){
+			alert("");
+		}
+	let input3Lvlllll = prompt("Well.. how's it been? It's time for another dice roll; a 8-sided dice! What number do you want to roll for? (1-8)");
+		alert(input3Lvlllll + " is the number you chose");
+		if(lvlThreeArray == ["2","2","1","2"]){
+			alert("Ohhhh snappppp, you chose the best possible actions for this level, you can bypass this dice roll!");
+			levelFour(); 
+		}
+		if(input3Lvlllll == diceRoll(8)){
+			alert("Congrats! The rolled number matches your number, time for level four!");
+		} else if(input3Lvlllll !== diceRoll(8)){
+			alert("Ooooooffff thats rough, numbers did not match. RESTART LEVEL THREE!");
+			levelThree();
+		}
 }
 
 //levelThree();
