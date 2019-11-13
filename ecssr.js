@@ -26,23 +26,24 @@ function diceRoll(numSides){
 
 // 	alert(diceRoll(userInput));
 // }
-
-// run game
 // runGame();
+function runGame(){
+	alert("Let The Games Begin!");
+	let playerName = prompt("Please enter your name.");
+	levelOne();
+}
 
-// levelOne
 // perfect sequenced answers = 2,3,1,3 (totals 9)
 function levelOne(){
 	alert("Welcome to the most frustra.. I mean fun, single-day simulation of Mada's life! Throw your free-will aside for this short and funny game/story that follows a nerd looking to level up his coding/developer skills to over 9000. Before mastering his skills and landing a job, he must first master his Daily Grind, typically consisting of waking up, eating, coding, shitting, sleeping, and repeating. Please click ok to continue and see if you can make it through Mada's Daily Grind!");
 	let lvlOneArray = [];
-	let playerName = prompt("Please enter your name.");
 	let inputLvl = prompt("Goooooood Morning! The alarm is set for 5:45am but, of course, your internal clock decided on 5:32am. What should you do?1. Go back to sleep, 13 minutes is like 260 dream minutes.  2. Lay in bed and try to NOT fall back asleep.  3. Just get up, do some stretching; don't let yourself fall back asleep.");
 		lvlOneArray.push(inputLvl);
-		if(inputLvl == "1"){
+		if(inputLvl == 1){
 			alert("Andddd I slept through the alarm.. I no longer have time to shower and might not have time to eat");
-		} else if(inputLvl == "2"){
+		} else if(inputLvl == 2){
 			alert("That was a lame 13 minutes but hey I've got time to make lunch and get breakfast on the way; thankfully I showered last night.");
-		} else if(inputLvl == "3"){
+		} else if(inputLvl == 3){
 			alert("Ahhhh, just what I needed! I've even got time to shower, eat, and prep lunch!");
 		}
 	let inputLvll = prompt("To eat, or not to eat, that is the question. Obviously TO EAT is the right answer, but what are you going to do?  1. Who has time for breakfast? I'll buy food when I get hungry later  2. Have some cereal before I leave and worry about lunch later.  3. Pack a lunch and get a few cliff bars on the way.");
@@ -72,7 +73,7 @@ function levelOne(){
 		}
 	let inputLvlllll = prompt("How was getting ready this morning? It's time for the first roll of the day; a 4-sided dice! What number do you want to roll for? (1-4)");
 		alert(inputLvlllll + " is the number you chose");
-		if(lvlOneArray == ["2","3","1","3"]){
+		if(lvlOneArray = [2,3,1,3]){
 			alert("Ohhhh snappppp, you chose the best possible actions for this level, you can bypass the first dice roll!");
 			levelTwo(); 
 		}
@@ -84,34 +85,42 @@ function levelOne(){
 			levelOne();
 		}
 }
-levelOne();
-// console.log(lvlOneArray);
+// levelOne();
 
-
-// console.log(lvlTwoArray);
-// levelTwo
 // perfect sequenced answers = 1, 2, 3, 2 (totals 8)
 function levelTwo(){
 	alert("Congrats on making it to Level 2! Who knew a morning could be so frustrating?");
-	let lvlTwoArray = [];
-	let input2Lvl = prompt("situation2/question1");
+	let lvlTwoArray = []; 
+	let input2Lvl = prompt("Damn it's FREEZING outside! Good thing class is only a few blocks from where I parked. I'm still sooooo tired, what poison should I pick to perk me up? 1.Bang(energy drink) 2.Water 3.Coffee");
 		lvlTwoArray.push(input2Lvl);
-		if(input2Lvl == "1"){
-			alert("situation2/question1.1");
-		} else if(input2Lvl == "2"){
-			alert("situation2/question1.2");
-		} else if(input2Lvl == "3"){
-			alert("situation2/question1.3");
+		if(input2Lvl == 1){
+			alert("These are my favorite! Great choice. I wonder why they're called Bang though..");
+			alert("Bang, the drink for freaky professionals. Get your day started the right way with a Bang; the only work-approved drink that gives you a morning Bang even if your lover doesn't.")
+			alert("Bang, a drink so powerful it was named after the sound of a gunshot! Wait.. do I really want to be putting that in my mouth? Think about the confusion; one can invigorate you while the other can bring destruction.")
+			alert("Yeahhh, that got deep. Now, let's proceed!");
+		} else if(input2Lvl == 2){
+			alert("As necessary as this is for life, I can survive for like 3 days with water right? I'll pass on the potential iron poisoning. If I wanted more iron I'd just pump some at the gym. Lets move on.");
+		} else if(input2Lvl == 3){
+			prompt("My coffee prefence matches the opposite color my soul.  1. Black(just coffee) or 2. White(with cream/sugar)");
+			alert("Having a preference for one over the other is just that, a preference. I didn't want coffee. Its only good for raising my heartrate to unsafe and anxie......GAMEOVER(you just had a heart attack, restarting the game");
+			levelOne();
 		}
-	let input2Lvll = prompt("situation2/question2");
+	let input2Lvll = prompt("Now that I have something to drink and wake me up, I'm ready to learn. First thing for today is a review lecture on HTML and CSS. Pshhhhhhhh, easy peasy, right? What's next?  1. Message this chick from Tinder you got drinks with last night.  2. Actively participate in the review. I'm here to learn and learning comes from participation. 3. I'll pay attention but don't feel like participating this morning. I feel like I'm still half asleep.");
 		lvlTwoArray.push(input2Lvll);
 		if(input2Lvll == 1){
-			alert("situation2/question2.1 with level reset");
+			alert("Yeah she's hot, but want to know whats sexier? Knowledge. Nerds are the new Brad Pit. Yes, Tinder does promote using your brain; just not the brain that grows from knowledge. GAMEOVER. RESTART LEVEL TWO.");
 			levelTwo();
 		} else if(input2Lvll == 2){
-			alert("situation2/question2.2");
+			alert("I'd like to think this one was pretty straight forward. Even if I knew the content like the back of my hand, you best believe I'm going to try to get as much info as possible. Life progression aside, I'm really not trying to piss away $17,800.");
 		} else if(input2Lvll == 3){
-			alert("situation2/question2.3");
+			alert("I mean.. this is certainly a better route than Tinder chick.. but like.. JUST WAKE THE EFFFF UPPPPPP AND PAY ATTENTION!");
+			alert("Wake");
+			alert("The");
+			alert("F^ck");
+			alert("Up");
+			alert("...");
+			alert(".....");
+			alert("WAKE UP");
 		}
  	prompt("situation2/riggedQ3");
  	alert("situation3/riggedQ3.1");
@@ -130,7 +139,7 @@ function levelTwo(){
 		}
 	let input2Lvlllll = prompt("Well.. how's it been? It's time for another dice roll; a 6-sided dice! What number do you want to roll for? (1-6)");
 		alert(input2Lvlllll + " is the number you chose");
-		if(lvlTwoArray == ["1","2","3","2"]){
+		if(lvlTwoArray = [1,2,3,2]){
 			alert("Ohhhh snappppp, you chose the best possible actions for this level, you can bypass this dice roll!");
 			levelThree(); 
 		}
@@ -141,23 +150,19 @@ function levelTwo(){
 			levelTwo();
 		}
 }
-
 //levelTwo();
 
-
 // perfect sequenced answers = 2, 2, 1, 3 (totals 8)
-// console.log(lvlThreeArray);
-// levelThree
 function levelThree(){
 	alert("Congrats on making it to Level 3! Who knew a morning could be so frustrating?");
 	let lvlThreeArray = [];
 	let input3Lvl = prompt("situation3/question1");
 		lvlThreeArray.push(input3Lvl);
-		if(input3Lvl == "1"){
+		if(input3Lvl == 1){
 			alert("situation3/question1.1");
-		} else if(input3Lvl == "2"){
+		} else if(input3Lvl == 2){
 			alert("situation3/question1.2");
-		} else if(input3Lvl == "3"){
+		} else if(input3Lvl == 3){
 			alert("situation3/question1.3");
 		}
 	let input3Lvll = prompt("situation3/question2");
@@ -187,7 +192,7 @@ function levelThree(){
 		}
 	let input3Lvlllll = prompt("Well.. how's it been? It's time for another dice roll; a 8-sided dice! What number do you want to roll for? (1-8)");
 		alert(input3Lvlllll + " is the number you chose");
-		if(lvlThreeArray == ["2","2","1","3"]){
+		if(lvlThreeArray = [2,2,1,3]){
 			alert("Ohhhh snappppp, you chose the best possible actions for this level, you can bypass this dice roll!");
 			levelFour(); 
 		}
@@ -200,20 +205,17 @@ function levelThree(){
 }
 //levelThree();
 
-
 // perfect sequenced answers = 2, 3, 3, 1 (totals 9)
-// console.log(lvlFourArray);
-// levelFour
 function levelFour(){
 	alert("Congrats on making it to Level 4! Who knew a morning could be so frustrating?");
 	let lvlFourArray = [];
 	let input4Lvl = prompt("situation4/question1");
 		lvlFourArray.push(input4Lvl);
-		if(input4Lvl == "1"){
+		if(input4Lvl == 1){
 			alert("situation4/question1.1");
-		} else if(input4Lvl == "2"){
+		} else if(input4Lvl == 2){
 			alert("situation4/question1.2");
-		} else if(input4Lvl == "3"){
+		} else if(input4Lvl == 3){
 			alert("situation4/question1.3");
 		}
 	let input4Lvll = prompt("situation4/question2");
@@ -243,7 +245,7 @@ function levelFour(){
 		}
 	let input4Lvlllll = prompt("Well.. how's it been? It's time for another dice roll; a 10-sided dice! What number do you want to roll for? (1-10)");
 		alert(input4Lvlllll + " is the number you chose");
-		if(lvlFourArray == ["2","3","3","1"]){
+		if(lvlFourArray = [2,3,3,1]){
 			alert("Ohhhh snappppp, you chose the best possible actions for this level, you can bypass this dice roll!");
 			levelFive(); 
 		}
@@ -256,20 +258,17 @@ function levelFour(){
 }
 //levelFour();
 
-
 // perfect sequenced answers = 3, 2, 1 (totals 6)
-// console.log(lvlFiveArray);
-// levelFive
 function levelFive(){
 	alert("Congrats on making it to Level 5! Who knew a morning could be so frustrating?");
 	let lvlFiveArray = [];
 	let input5Lvl = prompt("situation5/question1");
 		lvlFiveArray.push(input5Lvl);
-		if(input5Lvl == "1"){
+		if(input5Lvl == 1){
 			alert("situation5/question1.1");
-		} else if(input5Lvl == "2"){
+		} else if(input5Lvl == 2){
 			alert("situation5/question1.2");
-		} else if(input5Lvl == "3"){
+		} else if(input5Lvl == 3){
 			alert("situation5/question1.3");
 		}
 	let input5Lvll = prompt("situation5/question2");
@@ -294,7 +293,7 @@ function levelFive(){
 		}
 	let input5Lvllll = prompt("Well.. how's it been? It's time for another dice roll; a 12-sided dice! What number do you want to roll for? (1-12)");
 		alert(input5Lvllll + " is the number you chose");
-		if(lvlFiveArray == ["2","3","3"]){
+		if(lvlFiveArray = [2,3,3]){
 			alert("Ohhhh snappppp, you chose the best possible actions for this level, you can bypass this dice roll!");
 			levelSix(); 
 		}
@@ -307,20 +306,17 @@ function levelFive(){
 }
 //levelFive();
 
-
 // perfect sequenced answers = 1, 2 (totals 3)
-// console.log(lvlSixArray);
-// levelSix
 function levelSix(){
 	alert("Congrats on making it to the final level! Who knew a morning could be so frustrating?");
 	let lvlSixArray = [];
 	let input6Lvl = prompt("situation6/question1");
 		lvlSixArray.push(input6Lvl);
-		if(input6Lvl == "1"){
+		if(input6Lvl == 1){
 			alert("situation6/question1.1");
-		} else if(input6Lvl == "2"){
+		} else if(input6Lvl == 2){
 			alert("situation6/question1.2");
-		} else if(input6Lvl == "3"){
+		} else if(input6Lvl == 3){
 			alert("situation6/question1.3");
 		}
 	let input6Lvll = prompt("situation6/question2");
@@ -335,7 +331,7 @@ function levelSix(){
 		}
 	let input6Lvlll = prompt("Well.. how's it been? It's time for your FINAL dice roll; a 20-sided dice! What number do you want to roll for? (1-20)");
 		alert(input6Lvlll + " is the number you chose");
-		if(lvlSixArray == ["1","2"]){
+		if(lvlSixArray = [1,2]){
 			alert("Ohhhh snappppp, you chose the best possible actions for this level, you get three attempts instead of one!");
 			levelWinning();
 			// right here
@@ -343,12 +339,10 @@ function levelSix(){
 		if(input6Lvlll == diceRoll(20)){
 			alert("Congrats! The rolled number matches your number, time for CELEBRATION!");
 		} else if(input6Lvlll !== diceRoll(20)){
-			alert("Ooooooffff thats rough, numbers did not match. RESTART LEVEL THREE!");
+			alert("Ooooooffff thats rough, numbers did not match. RESTART TO LEVEL THREE!");
 			levelThree();
 		}
 }
-
 //levelSix();
-
 
 // NEED TO CREATE A LEVELWINNING FUNCTION AS A WINNING PAGE TO FINISH OFF THE GAME. GAME FUNCTIONALITY IS PRACTICALLY FINISHED, NOW TO ENTER THE STORY/TEXT FOR LEVELS 2-END

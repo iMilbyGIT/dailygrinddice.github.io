@@ -6,14 +6,9 @@ body{
     background-position: center;
 }
 
-#game{
-	position:absolute;
-	left:1000px;
-	top:150px;
-}
-
-.button{
+button{
   background-color: blue;
+  position: center;
   border: none;
   color: white;
   padding: 15px 32px;
