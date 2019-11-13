@@ -78,8 +78,9 @@ function levelOne(){
 		}
 		if(inputLvlllll == diceRoll(4)){
 			alert("Congrats! The rolled number matches your number, time for level two!");
+			levelTwo();
 		} else if(inputLvlllll !== diceRoll(4)){
-			alert("Ooooooffff thats rough, numbers did not match. GAMEOVER");
+			alert("Ooooooffff thats rough, numbers did not match. GAMEOVER.");
 			levelOne();
 		}
 }
