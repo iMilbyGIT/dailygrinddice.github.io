@@ -30,21 +30,6 @@ function diceRoll(numSides){
 // run game
 // runGame();
 
-
-
-
-
-
-
-// UPDATE ALL ARRAY FIELDS TO REFLECT THE STYLE/FORMATTING OF inputLvl
-
-
-
-
-
-
-
-
 // levelOne
 // perfect sequenced answers = 2,3,1,3 (totals 9)
 function levelOne(){
@@ -98,57 +83,53 @@ function levelOne(){
 			levelOne();
 		}
 }
-
 levelOne();
-
-
 // console.log(lvlOneArray);
 
 
 // console.log(lvlTwoArray);
-
 // levelTwo
-// perfect sequenced answers = 1, 1, 3, 2 (totals 7)
+// perfect sequenced answers = 1, 2, 3, 2 (totals 8)
 function levelTwo(){
 	alert("Congrats on making it to Level 2! Who knew a morning could be so frustrating?");
 	let lvlTwoArray = [];
-	let input2Lvl = prompt("");
+	let input2Lvl = prompt("situation2/question1");
 		lvlTwoArray.push(input2Lvl);
 		if(input2Lvl == "1"){
-			alert("");
+			alert("situation2/question1.1");
 		} else if(input2Lvl == "2"){
-			alert("");
+			alert("situation2/question1.2");
 		} else if(input2Lvl == "3"){
-			alert("");
+			alert("situation2/question1.3");
 		}
-	let input2Lvll = prompt("");
+	let input2Lvll = prompt("situation2/question2");
 		lvlTwoArray.push(input2Lvll);
 		if(input2Lvll == 1){
-			alert("");
+			alert("situation2/question2.1 with level reset");
 			levelTwo();
 		} else if(input2Lvll == 2){
-			alert("");
+			alert("situation2/question2.2");
 		} else if(input2Lvll == 3){
-			alert("");
+			alert("situation2/question2.3");
 		}
- 	prompt("");
- 	alert("");
- 	let input2Lvlll = prompt("");
+ 	prompt("situation2/riggedQ3");
+ 	alert("situation3/riggedQ3.1");
+ 	let input2Lvlll = prompt("situation3/riggedQ4");
 		lvlTwoArray.push(input2Lvlll);
-	alert("");
-	 let input2Lvllll = prompt("");
+	alert("situation3/riggedQ4.1");
+	 let input2Lvllll = prompt("situation2/question5");
 		lvlTwoArray.push(input2Lvllll)
 		if(input2Lvllll == 1){
-			alert("");
+			alert("situation2/question5.1");
 		} else if(input2Lvllll == 2){
-			alert("");
+			alert("situation2/question5.2 with level reset");
 			levelTwo();
 		} else if(input2Lvllll == 3){
-			alert("");
+			alert("situation2/question5.3");
 		}
 	let input2Lvlllll = prompt("Well.. how's it been? It's time for another dice roll; a 6-sided dice! What number do you want to roll for? (1-6)");
 		alert(input2Lvlllll + " is the number you chose");
-		if(lvlTwoArray == ["1","1","3","2"]){
+		if(lvlTwoArray == ["1","2","3","2"]){
 			alert("Ohhhh snappppp, you chose the best possible actions for this level, you can bypass this dice roll!");
 			levelThree(); 
 		}
@@ -163,49 +144,49 @@ function levelTwo(){
 //levelTwo();
 
 
-// perfect sequenced answers = 2, 2, 1, 2 (totals 7)
+// perfect sequenced answers = 2, 2, 1, 3 (totals 8)
 // console.log(lvlThreeArray);
 // levelThree
 function levelThree(){
 	alert("Congrats on making it to Level 3! Who knew a morning could be so frustrating?");
 	let lvlThreeArray = [];
-	let input3Lvl = prompt("");
+	let input3Lvl = prompt("situation3/question1");
 		lvlThreeArray.push(input3Lvl);
 		if(input3Lvl == "1"){
-			alert("");
+			alert("situation3/question1.1");
 		} else if(input3Lvl == "2"){
-			alert("");
+			alert("situation3/question1.2");
 		} else if(input3Lvl == "3"){
-			alert("");
+			alert("situation3/question1.3");
 		}
-	let input3Lvll = prompt("");
+	let input3Lvll = prompt("situation3/question2");
 		lvlThreeArray.push(input3Lvll);
 		if(input3Lvll == 1){
-			alert("");
+			alert("situation3/question2.1 with level reset");
 			levelThree();
 		} else if(input3Lvll == 2){
-			alert("");
+			alert("situation3/question2.2");
 		} else if(input3Lvll == 3){
-			alert("");
+			alert("situation3/question2.3");
 		}
- 	prompt("");
- 	alert("");
- 	let input3Lvlll = prompt("");
+ 	prompt("situation3/riggedQ3");
+ 	alert("situation3/riggedQ3.1");
+ 	let input3Lvlll = prompt("situation3/riggedQ4");
 		lvlThreeArray.push(input3Lvlll);
-	alert("");
-	 let input3Lvllll = prompt("");
+	alert("situation3/riggedQ4.1");
+	 let input3Lvllll = prompt("situation3/question5");
 		lvlThreeArray.push(input3Lvllll)
 		if(input3Lvllll == 1){
-			alert("");
+			alert("situation3/question5.1");
 		} else if(input3Lvllll == 2){
-			alert("");
+			alert("situation3/question5.2 with level reset");
 			levelThree();
 		} else if(input3Lvllll == 3){
-			alert("");
+			alert("situation3/question5.3");
 		}
 	let input3Lvlllll = prompt("Well.. how's it been? It's time for another dice roll; a 8-sided dice! What number do you want to roll for? (1-8)");
 		alert(input3Lvlllll + " is the number you chose");
-		if(lvlThreeArray == ["2","2","1","2"]){
+		if(lvlThreeArray == ["2","2","1","3"]){
 			alert("Ohhhh snappppp, you chose the best possible actions for this level, you can bypass this dice roll!");
 			levelFour(); 
 		}
@@ -216,10 +197,7 @@ function levelThree(){
 			levelThree();
 		}
 }
-
 //levelThree();
-
-
 
 
 // perfect sequenced answers = 2, 3, 3, 1 (totals 9)
@@ -228,39 +206,39 @@ function levelThree(){
 function levelFour(){
 	alert("Congrats on making it to Level 4! Who knew a morning could be so frustrating?");
 	let lvlFourArray = [];
-	let input4Lvl = prompt("");
+	let input4Lvl = prompt("situation4/question1");
 		lvlFourArray.push(input4Lvl);
 		if(input4Lvl == "1"){
-			alert("");
+			alert("situation4/question1.1");
 		} else if(input4Lvl == "2"){
-			alert("");
+			alert("situation4/question1.2");
 		} else if(input4Lvl == "3"){
-			alert("");
+			alert("situation4/question1.3");
 		}
-	let input4Lvll = prompt("");
+	let input4Lvll = prompt("situation4/question2");
 		lvlFourArray.push(input4Lvll);
 		if(input4Lvll == 1){
-			alert("");
+			alert("situation4/question2.1 with level reset");
 			levelFour();
 		} else if(input4Lvll == 2){
-			alert("");
+			alert("situation4/question2.2");
 		} else if(input4Lvll == 3){
-			alert("");
+			alert("situation4/question2.3");
 		}
- 	prompt("");
- 	alert("");
- 	let input4Lvlll = prompt("");
+ 	prompt("situation4/riggedQ3");
+ 	alert("situation4/riggedQ3.1");
+ 	let input4Lvlll = prompt("situation4/riggedQ4");
 		lvlFourArray.push(input4Lvlll);
-	alert("");
-	 let input4Lvllll = prompt("");
+	alert("situation4/riggedQ4.1");
+	 let input4Lvllll = prompt("situation4/question5");
 		lvlFourArray.push(input4Lvllll)
 		if(input4Lvllll == 1){
-			alert("");
+			alert("situation4/question5.1");
 		} else if(input4Lvllll == 2){
-			alert("");
+			alert("situation4/question5.2 with level reset");
 			levelFour();
 		} else if(input4Lvllll == 3){
-			alert("");
+			alert("situation4/question5.3");
 		}
 	let input4Lvlllll = prompt("Well.. how's it been? It's time for another dice roll; a 10-sided dice! What number do you want to roll for? (1-10)");
 		alert(input4Lvlllll + " is the number you chose");
@@ -275,10 +253,7 @@ function levelFour(){
 			levelFour();
 		}
 }
-
 //levelFour();
-
-
 
 
 // perfect sequenced answers = 3, 2, 1 (totals 6)
@@ -287,34 +262,34 @@ function levelFour(){
 function levelFive(){
 	alert("Congrats on making it to Level 5! Who knew a morning could be so frustrating?");
 	let lvlFiveArray = [];
-	let input5Lvl = prompt("");
+	let input5Lvl = prompt("situation5/question1");
 		lvlFiveArray.push(input5Lvl);
 		if(input5Lvl == "1"){
-			alert("");
+			alert("situation5/question1.1");
 		} else if(input5Lvl == "2"){
-			alert("");
+			alert("situation5/question1.2");
 		} else if(input5Lvl == "3"){
-			alert("");
+			alert("situation5/question1.3");
 		}
-	let input5Lvll = prompt("");
+	let input5Lvll = prompt("situation5/question2");
 		lvlFiveArray.push(input5Lvll);
 		if(input5Lvll == 1){
-			alert("");
+			alert("situation5/question2.1 with level reset");
 			levelFive();
 		} else if(input5Lvll == 2){
-			alert("");
+			alert("situation5/question2.2");
 		} else if(input5Lvll == 3){
-			alert("");
+			alert("situation5/question2.3");
 		}
-	 let input5Lvlll = prompt("");
+	 let input5Lvlll = prompt("situation5/question3");
 		lvlFiveArray.push(input5Lvlll)
 		if(input5Lvlll == 1){
-			alert("");
+			alert("situation5/question3.1");
 		} else if(input5Lvlll == 2){
-			alert("");
+			alert("situation5/question3.2 with level reset");
 			levelFive();
 		} else if(input5Lvlll == 3){
-			alert("");
+			alert("situation5/question3.3");
 		}
 	let input5Lvllll = prompt("Well.. how's it been? It's time for another dice roll; a 12-sided dice! What number do you want to roll for? (1-12)");
 		alert(input5Lvllll + " is the number you chose");
@@ -329,15 +304,50 @@ function levelFive(){
 			levelFive();
 		}
 }
-
 //levelFive();
 
 
-
+// perfect sequenced answers = 1, 2 (totals 3)
+// console.log(lvlSixArray);
 // levelSix
 function levelSix(){
-	alert("Congrats on making it to the last level!");
+	alert("Congrats on making it to the final level! Who knew a morning could be so frustrating?");
+	let lvlSixArray = [];
+	let input6Lvl = prompt("situation6/question1");
+		lvlSixArray.push(input6Lvl);
+		if(input6Lvl == "1"){
+			alert("situation6/question1.1");
+		} else if(input6Lvl == "2"){
+			alert("situation6/question1.2");
+		} else if(input6Lvl == "3"){
+			alert("situation6/question1.3");
+		}
+	let input6Lvll = prompt("situation6/question2");
+		lvlSixArray.push(input6Lvll);
+		if(input6Lvll == 1){
+			alert("situation6/question2.1 with level reset");
+			levelSix();
+		} else if(input6Lvll == 2){
+			alert("situation6/question2.2");
+		} else if(input6Lvll == 3){
+			alert("situation6/question2.3");
+		}
+	let input6Lvlll = prompt("Well.. how's it been? It's time for your FINAL dice roll; a 20-sided dice! What number do you want to roll for? (1-20)");
+		alert(input6Lvlll + " is the number you chose");
+		if(lvlSixArray == ["1","2"]){
+			alert("Ohhhh snappppp, you chose the best possible actions for this level, you get three attempts instead of one!");
+			levelWinning();
+			// right here
+		}
+		if(input6Lvlll == diceRoll(20)){
+			alert("Congrats! The rolled number matches your number, time for CELEBRATION!");
+		} else if(input6Lvlll !== diceRoll(20)){
+			alert("Ooooooffff thats rough, numbers did not match. RESTART LEVEL THREE!");
+			levelThree();
+		}
 }
 
 //levelSix();
 
+
+// NEED TO CREATE A LEVELWINNING FUNCTION AS A WINNING PAGE TO FINISH OFF THE GAME. GAME FUNCTIONALITY IS PRACTICALLY FINISHED, NOW TO ENTER THE STORY/TEXT FOR LEVELS 2-END
