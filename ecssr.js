@@ -125,15 +125,16 @@ function levelTwo(){
  	let input2Lvlll = promptFor("#firstworldproblems aside, I got a few minutes before I need to be in the work room. Should I..  1. Run to the car quick to get my wallet, because food is life.  2. Bug a buddy and pay them back after lunch or tomorrow.  3. Just sit tight and go get ready for worktime. You might run an errand during lunch break and can get the wallet then.");
 		lvlTwoArray.push(input2Lvlll);
 	alert("I almost missed a slack message about a stand-up, looks like I'm waiting regardless.");
-	 let input2Lvllll = promptFor("*Imagine the proceeding exclaimation said in a Jersey-Shore-T-Shirt-Time manner*  IIIIITSSSS STAAAAANDDDDD UPPPPP TIMEEEEEEEE!  What should the next move be?  1. Participate.. duh, just stand up");
+	 let input2Lvllll = promptFor("*Imagine the proceeding exclaimation said in a Jersey-Shore-T-Shirt-Time manner*  IIIIITSSSS STAAAAANDDDDD UPPPPP TIMEEEEEEEE!  What should the next move be?  1.   2. Sit-Down  3. Participate.. please, stand up!");
 		lvlTwoArray.push(input2Lvllll)
 		if(input2Lvllll == 1){
 			alert("situation2/question5.1");
 		} else if(input2Lvllll == 2){
-			alert("situation2/question5.2 with level reset");
+			alert("No. Just... no. You know that Nike and Shia Labeouf video, right? Well, DON'T DO IT!");
 			levelTwo();
 		} else if(input2Lvllll == 3){
-			alert("situation2/question5.3");
+			alert("I'm standing for three reasons; its good practice, its part of class, and primarily because.. well..");
+			alert("I'm Slim Shady, yes I'm the real Shady, all you other Slim Shadys are just imitating, so won't the real Slim Shady please stand up, please stand up, please stand up?");
 		}
 	let input2Lvlllll = promptFor("Well.. how's it been? It's time for another dice roll; a 6-sided dice! What number do you want to roll for? (1-6)");
 		alert(input2Lvlllll + " is the number you chose");
@@ -153,16 +154,20 @@ function levelThree(){
 // Perfect Sequence = 2-2-1-3
 	alert("Level 3! Feeling discouraged yet? Well, buckle up buttercup, cuz its about to get INTENSE!");
 	let lvlThreeArray = [];
-	let input3Lvl = promptFor("situation3/question1");
+	let input3Lvl = promptFor("Its almost time for lunch! Should I..  1. I'm caught up on work and need to run to Walgreens, I think I'll leave 10minutes early to give myself more time.  2. I'm going to finish this example problem before I take lunch.  3. I'll wait for 12pm but I'm taking that full hour for relaxation.");
 		lvlThreeArray.push(input3Lvl);
 		if(input3Lvl == 1){
-			alert("situation3/question1.1");
+			alert("Why the rush? Lunch break is an hour long, and Walgreens is barely 15 minutes away. We are all adults, but that also comes with being respectful.. *hint hint*");
+			alert("Yeah.. I should've waited for after class to go. Just my luck, even with the extra 10 minutes, I didn't even get my perscription refilled. If you have 4 registers in the Pharmacy, why not use more than one?");
+			alert("And to top it off, I MISSED A SURPRISE PIZZA LUNCH YARGGGGGGG!");
 		} else if(input3Lvl == 2){
-			alert("situation3/question1.2");
+			alert("Spoken like a textbook student pet.. kidding. It's good to finish up or find a pause point before you walk away from this sort of work.");
+			alert("Ayyyeeeeee, looks like its pizza for lunch today! Thanks, Instructors!")
 		} else if(input3Lvl == 3){
-			alert("situation3/question1.3");
+			alert("The intent was to relax, not to freeze my ass off and eat overcooked food. I should've stayed in the building! Atleast I'm full and ate healthy?");
 		}
-	let input3Lvll = promptFor("situation3/question2");
+			alert("Some talents you're born with and others are learned. As a man of many talents, one of my favorites is one of convenience. After eating, I've got 20min before my date with Ms Stinkystool, the Queen of Porcelain Thrones!");
+	let input3Lvll = promptFor("Why bring up talents? It was just a good segway to me needing to take that date; I realllllllly need to shit. But of course, this can't be easy. Will I................");
 		lvlThreeArray.push(input3Lvll);
 		if(input3Lvll == 1){
 			alert("situation3/question2.1 with level reset");
@@ -338,3 +343,4 @@ function levelSix(){
 		}
 }
 // NEED TO CREATE A LEVELWINNING FUNCTION AS A WINNING PAGE TO FINISH OFF THE GAME. GAME FUNCTIONALITY IS PRACTICALLY FINISHED, NOW TO ENTER THE STORY/TEXT FOR LEVELS 2-END
+// line 170 is where I left off.
