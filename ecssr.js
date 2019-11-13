@@ -35,6 +35,19 @@ function diceRoll(numSides){
 
 
 
+
+
+
+
+// UPDATE ALL ARRAY FIELDS TO REFLECT THE STYLE/FORMATTING OF inputLvl
+
+
+
+
+
+
+
+
 // levelOne
 // perfect sequenced answers = 2,3,1,3 (totals 9)
 function levelOne(){
@@ -51,51 +64,103 @@ function levelOne(){
 			alert("Ahhhh, just what I needed! I've even got time to shower, eat, and prep lunch!");
 		}
 	let inputLvll = prompt("To eat, or not to eat, that is the question. Obviously TO EAT is the right answer, but what are you going to do?  1. Who has time for breakfast? I'll buy food when I get hungry later  2. Have some cereal before I leave and worry about lunch later.  3. Pack a lunch and get a few cliff bars on the way.");
-		if(lvlOneArray[1] == 1){
+		lvlOneArray.push(inputLvll);
+		if(inputLvll == 1){
 			alert("Food is energy, food is life! Did you forget I'm hypoglycemic?! You already passed out, GAMEOVER.");
 			levelOne();
-		} else if(lvlOneArray[1] == 2){
+		} else if(inputLvll == 2){
 			alert("They're GRRRREATTTT! Tasty and nestalgic.");
-		} else if(lvlOneArray[1] == 3){
+		} else if(inputLvll == 3){
 			alert("Yummmm, PB&Js on deck! The cliff bars will help jump start the day.");
 		}
  	prompt("Off to class! Music makes everything better, what should I listen to on the way? p.s. I'm pretty open as long as it's NOT country.");
  	alert("Yeah.. So I take back my previous statement.. music makes everything better.. EXCEPT when you're the DJ.. wtf is that?! I've never puked out of my ears before but hey; there's a first time for everything?");
  	let inputLvlll = prompt("Anyway, back to the drive. I've got two options: 1. take the highway, or 2. take city streets");
+		lvlOneArray.push(inputLvlll);
 	alert("Good call, traffic could get crazy if I took any other route");
 	 let inputLvllll = prompt("Parking is always a pain in the ass.. How should I handle this? 1.Look for road-side meter parking.  2.Take a gamble and park in the cul-de-sac.  3.Pay $10 for day parking in the Public Market lot..");
-		if(lvlOneArray[3] == 1){
+		lvlOneArray.push(inputLvllll)
+		if(inputLvllll == 1){
 			alert("Wow, you actually caught a break and snagged a spot right in front of the building.");
-		} else if(lvlOneArray[3] == 2){
+		} else if(inputLvllll == 2){
 			alert("You've gotten away with this in the past, but NOT TODAY said Karma. Ticketed, towed, blownup.. GAMEOVER.");
 			levelOne();
-		} else if(lvlOneArray[3] == 3){
+		} else if(inputLvllll == 3){
 			alert("The price pisses you off but hey, at least you can't get towed!");
 		}
 	let inputLvlllll = prompt("How was getting ready this morning? It's time for the first roll of the day; a 4-sided dice! What number do you want to roll for? (1-4)");
-		alert(inputLvlllll);
+		alert(inputLvlllll + " is the number you chose");
 		if(lvlOneArray == ["2","3","1","3"]){
 			alert("Ohhhh snappppp, you chose the best possible actions for this level, you can bypass the first dice roll!");
 			levelTwo(); 
 		}
 		if(inputLvlllll == diceRoll(4)){
-			alert("Congrats! The rolled number matches your number!");
+			alert("Congrats! The rolled number matches your number, time for level two!");
 		} else if(inputLvlllll !== diceRoll(4)){
 			alert("Ooooooffff thats rough, numbers did not match. GAMEOVER");
 			levelOne();
 		}
-	// console.log(lvlOneArray.toString);
 }
 
-//levelOne();
+levelOne();
 
 
 // console.log(lvlOneArray);
 
-// levelTwo
-function levelTwo(){
-	alert("Congrats on making it to Level 2! Who know a morning could be so frustrating?");
 
+// console.log(lvlTwoArray);
+
+// levelTwo
+// perfect sequenced answers = 1, 1, 3, 2 (totals 7)
+function levelTwo(){
+	alert("Congrats on making it to Level 2! Who knew a morning could be so frustrating?");
+	let lvlTwoArray = [];
+	let input2Lvl = prompt("");
+		lvlTwoArray.push(input2Lvl);
+		if(input2Lvl == "1"){
+			alert("");
+		} else if(input2Lvl == "2"){
+			alert("");
+		} else if(input2Lvl == "3"){
+			alert("");
+		}
+	let input2Lvll = prompt("");
+		lvlTwoArray.push(input2Lvll);
+		if(input2Lvll == 1){
+			alert("");
+			levelTwo();
+		} else if(input2Lvll == 2){
+			alert("");
+		} else if(input2Lvll == 3){
+			alert("");
+		}
+ 	prompt("");
+ 	alert("");
+ 	let input2Lvlll = prompt("");
+		lvlTwoArray.push(input2Lvlll);
+	alert("");
+	 let input2Lvllll = prompt("");
+		lvlTwoArray.push(input2Lvllll)
+		if(input2Lvllll == 1){
+			alert("");
+		} else if(input2Lvllll == 2){
+			alert("");
+			levelTwo();
+		} else if(input2Lvllll == 3){
+			alert("");
+		}
+	let input2Lvlllll = prompt("Well.. how's it been? It's time for another dice roll; a 6-sided dice! What number do you want to roll for? (1-6)");
+		alert(input2Lvlllll + " is the number you chose");
+		if(lvlTwoArray == ["1","1","3","2"]){
+			alert("Ohhhh snappppp, you chose the best possible actions for this level, you can bypass this dice roll!");
+			levelThree(); 
+		}
+		if(input2Lvlllll == diceRoll(6)){
+			alert("Congrats! The rolled number matches your number, time for level three!");
+		} else if(input2Lvlllll !== diceRoll(6)){
+			alert("Ooooooffff thats rough, numbers did not match. RESTART LEVEL TWO!");
+			levelTwo();
+		}
 }
 
 //levelTwo();
