@@ -1,8 +1,5 @@
 "use strict";
 let numSides;
-// let playerName = prompt("Please enter your name");
-// let userInput = window.prompt("Choose your lucky number");
-// function junction
 
 function diceRoll(numSides){
 	let dice = Math.floor(Math.random() * numSides) +1
@@ -224,18 +221,113 @@ function levelThree(){
 
 
 
+
+// perfect sequenced answers = 2, 3, 3, 1 (totals 9)
+// console.log(lvlFourArray);
 // levelFour
 function levelFour(){
-	alert("Congrats on making it to Level 4!");
+	alert("Congrats on making it to Level 4! Who knew a morning could be so frustrating?");
+	let lvlFourArray = [];
+	let input4Lvl = prompt("");
+		lvlFourArray.push(input4Lvl);
+		if(input4Lvl == "1"){
+			alert("");
+		} else if(input4Lvl == "2"){
+			alert("");
+		} else if(input4Lvl == "3"){
+			alert("");
+		}
+	let input4Lvll = prompt("");
+		lvlFourArray.push(input4Lvll);
+		if(input4Lvll == 1){
+			alert("");
+			levelFour();
+		} else if(input4Lvll == 2){
+			alert("");
+		} else if(input4Lvll == 3){
+			alert("");
+		}
+ 	prompt("");
+ 	alert("");
+ 	let input4Lvlll = prompt("");
+		lvlFourArray.push(input4Lvlll);
+	alert("");
+	 let input4Lvllll = prompt("");
+		lvlFourArray.push(input4Lvllll)
+		if(input4Lvllll == 1){
+			alert("");
+		} else if(input4Lvllll == 2){
+			alert("");
+			levelFour();
+		} else if(input4Lvllll == 3){
+			alert("");
+		}
+	let input4Lvlllll = prompt("Well.. how's it been? It's time for another dice roll; a 10-sided dice! What number do you want to roll for? (1-10)");
+		alert(input4Lvlllll + " is the number you chose");
+		if(lvlFourArray == ["2","3","3","1"]){
+			alert("Ohhhh snappppp, you chose the best possible actions for this level, you can bypass this dice roll!");
+			levelFive(); 
+		}
+		if(input4Lvlllll == diceRoll(10)){
+			alert("Congrats! The rolled number matches your number, time for level five!");
+		} else if(input4Lvlllll !== diceRoll(10)){
+			alert("Ooooooffff thats rough, numbers did not match. RESTART LEVEL FOUR!");
+			levelFour();
+		}
 }
 
 //levelFour();
 
 
 
+
+// perfect sequenced answers = 3, 2, 1 (totals 6)
+// console.log(lvlFiveArray);
 // levelFive
 function levelFive(){
-	alert("Congrats on making it to Level 5!");
+	alert("Congrats on making it to Level 5! Who knew a morning could be so frustrating?");
+	let lvlFiveArray = [];
+	let input5Lvl = prompt("");
+		lvlFiveArray.push(input5Lvl);
+		if(input5Lvl == "1"){
+			alert("");
+		} else if(input5Lvl == "2"){
+			alert("");
+		} else if(input5Lvl == "3"){
+			alert("");
+		}
+	let input5Lvll = prompt("");
+		lvlFiveArray.push(input5Lvll);
+		if(input5Lvll == 1){
+			alert("");
+			levelFive();
+		} else if(input5Lvll == 2){
+			alert("");
+		} else if(input5Lvll == 3){
+			alert("");
+		}
+	 let input5Lvlll = prompt("");
+		lvlFiveArray.push(input5Lvlll)
+		if(input5Lvlll == 1){
+			alert("");
+		} else if(input5Lvlll == 2){
+			alert("");
+			levelFive();
+		} else if(input5Lvlll == 3){
+			alert("");
+		}
+	let input5Lvllll = prompt("Well.. how's it been? It's time for another dice roll; a 12-sided dice! What number do you want to roll for? (1-12)");
+		alert(input5Lvllll + " is the number you chose");
+		if(lvlFiveArray == ["2","3","3"]){
+			alert("Ohhhh snappppp, you chose the best possible actions for this level, you can bypass this dice roll!");
+			levelSix(); 
+		}
+		if(input5Lvllll == diceRoll(12)){
+			alert("Congrats! The rolled number matches your number, time for level six!");
+		} else if(input5Lvllll !== diceRoll(12)){
+			alert("Ooooooffff thats rough, numbers did not match. RESTART LEVEL FIVE!");
+			levelFive();
+		}
 }
 
 //levelFive();
