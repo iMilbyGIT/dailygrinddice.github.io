@@ -125,10 +125,12 @@ function levelTwo(){
  	let input2Lvlll = promptFor("#firstworldproblems aside, I got a few minutes before I need to be in the work room. Should I..  1. Run to the car quick to get my wallet, because food is life.  2. Bug a buddy and pay them back after lunch or tomorrow.  3. Just sit tight and go get ready for worktime. You might run an errand during lunch break and can get the wallet then.");
 		lvlTwoArray.push(input2Lvlll);
 	alert("I almost missed a slack message about a stand-up, looks like I'm waiting regardless.");
-	 let input2Lvllll = promptFor("*Imagine the proceeding exclaimation said in a Jersey-Shore-T-Shirt-Time manner*  IIIIITSSSS STAAAAANDDDDD UPPPPP TIMEEEEEEEE!  What should the next move be?  1.   2. Sit-Down  3. Participate.. please, stand up!");
+	 let input2Lvllll = promptFor("*Imagine the proceeding exclaimation said in a Jersey-Shore-T-Shirt-Time manner*  IIIIITSSSS STAAAAANDDDDD UPPPPP TIMEEEEEEEE!  What should the next move be?  1.Pretend I didn't see the Slack message and go get my wallet   2.Sit-Down  3.Participate.. please, stand up!");
 		lvlTwoArray.push(input2Lvllll)
 		if(input2Lvllll == 1){
-			alert("situation2/question5.1");
+			alert("Hold your horses.. still not letting the food/wallet thing go, huh? Well..");
+			alert("HA! Nice try. Tichael Merrill, one of the head hanchos here caught me off guard. He went right into talking about his favorite football team, Da Bears.");
+			alert("A quick GO PACK GO turned to a UP STAND UP as I ended up going to our mini meeting");
 		} else if(input2Lvllll == 2){
 			alert("No. Just... no. You know that Nike and Shia Labeouf video, right? Well, DON'T DO IT!");
 			levelTwo();
@@ -144,6 +146,7 @@ function levelTwo(){
 		}
 		if(input2Lvlllll == diceRoll(6)){
 			alert("Congrats! The rolled number matches your number, time for level three!");
+			levelThree();
 		} else if(input2Lvlllll !== diceRoll(6)){
 			alert("Ooooooffff thats rough, numbers did not match. RESTART LEVEL TWO!");
 			levelTwo();
@@ -162,35 +165,35 @@ function levelThree(){
 			alert("And to top it off, I MISSED A SURPRISE PIZZA LUNCH YARGGGGGGG!");
 		} else if(input3Lvl == 2){
 			alert("Spoken like a textbook student pet.. kidding. It's good to finish up or find a pause point before you walk away from this sort of work.");
-			alert("Ayyyeeeeee, looks like its pizza for lunch today! Thanks, Instructors!")
+			alert("Ayyyeeeeee, looks like its pizza for lunch today! Thanks, Instructors!");
 		} else if(input3Lvl == 3){
 			alert("The intent was to relax, not to freeze my ass off and eat overcooked food. I should've stayed in the building! Atleast I'm full and ate healthy?");
 		}
 			alert("Some talents you're born with and others are learned. As a man of many talents, one of my favorites is one of convenience. After eating, I've got 20min before my date with Ms Stinkystool, the Queen of Porcelain Thrones!");
-	let input3Lvll = promptFor("Why bring up talents? It was just a good segway to me needing to take that date; I realllllllly need to shit. But of course, this can't be easy. Will I................");
+			alert("How is this convenient you ask? Being able to accurately navigate your day knowing when you're gonna shit is a almost like predicting the future, and it makes for a hilarious bar trick. My poo-power isn't ALL powerful though.. I can't predict when others are in the bathroom.");
+	let input3Lvll = promptFor("What should I do?! These turtle heads are about to pop and all the stalls are taken!  1. Run/waddle to another floor to find an open bathroom  2. Man up, clench those cheeks, and wait for your turn  3. I need to sit down anyway and were all adults, so.. woman's bathroom?");
 		lvlThreeArray.push(input3Lvll);
 		if(input3Lvll == 1){
 			alert("situation3/question2.1 with level reset");
 			levelThree();
 		} else if(input3Lvll == 2){
-			alert("situation3/question2.2");
+			alert("That was an uncomfortably close call, but as I meantioned earlier, my poo power gets its true power from the 20 minute timestamp it provides. The stall freed up at 18 minutes and 30 seconds into and good thing it did.  That would have been quite the shit show, pun intended.");
 		} else if(input3Lvll == 3){
-			alert("situation3/question2.3");
+			alert("Not doing that again, thats for sure. A wise man named Fat Bastard once said; every man loves his own brand! That must not apply when in the womans bathroom because hot dayum, I singed every nose hair of all who passed through. That was rough getting out of there unseen.. like I said, never again.");
 		}
- 	promptFor("situation3/riggedQ3");
- 	alert("situation3/riggedQ3.1");
- 	let input3Lvlll = promptFor("situation3/riggedQ4");
+ 	let input3Lvlll = promptFor("With me being a simulation and all, I clearly have no shame. We've got the SHIT in ECSSR out of the way though, happy now?  1. Yes, though some of it was quite funny  2. Yes, that shit was gross.");
 		lvlThreeArray.push(input3Lvlll);
-	alert("situation3/riggedQ4.1");
-	 let input3Lvllll = promptFor("situation3/question5");
+	alert("Well, like I said, no shame. Regardless of your answer, just know; your next decision could reset your progress and put you into.. a poop-loop.");
+	alert("Now, back to learning!");
+	 let input3Lvllll = promptFor("For the rest of the afternoon we've been working on practice problems to prep for an upcoming project. I'm SO FRUSTRATED! Why are these called happy numbers when they only make me sad? I've been stuck. I think I should..   1. Copy what the guy sitting next to me has and maybe ask how he did it   2. Take code from w3schools, slap it in, change the var to let, and I'll worry about understanding it later   3. Ask an instructor for help; thats what they're here for!");
 		lvlThreeArray.push(input3Lvllll)
 		if(input3Lvllll == 1){
-			alert("situation3/question5.1");
+			alert("Certainly seems like a good option, and in this case, he was able to explain what was holding me up and helped me. But we're all new to this, he could've been worse off than me. Then I'd really be behind!");
 		} else if(input3Lvllll == 2){
-			alert("situation3/question5.2 with level reset");
+			alert("No no no no no. Comprehension goes hand in hand with functionality. That's what seperates coders from developers. This is DEV CodeCamp, not CodeCamp. The final kicker? Its plagurism! GET OUTTA HERE WITH THAT CRAP! GAMEOVER! RESET LEVEL!");
 			levelThree();
 		} else if(input3Lvllll == 3){
-			alert("situation3/question5.3");
+			alert("Yes yes yes yes yes. They were once a student learning this stuff too. Trust me, they want to help.");
 		}
 	let input3Lvlllll = promptFor("Well.. how's it been? It's time for another dice roll; a 8-sided dice! What number do you want to roll for? (1-8)");
 		alert(input3Lvlllll + " is the number you chose");
@@ -200,6 +203,7 @@ function levelThree(){
 		}
 		if(input3Lvlllll == diceRoll(8)){
 			alert("Congrats! The rolled number matches your number, time for level four!");
+			levelFour();
 		} else if(input3Lvlllll !== diceRoll(8)){
 			alert("Ooooooffff thats rough, numbers did not match. RESTART LEVEL THREE!");
 			levelThree();
@@ -208,7 +212,7 @@ function levelThree(){
 // 
 function levelFour(){
 // Perfect Sequence = 2-3-3-1
-	alert("Congrats on making it to Level 4! Who knew a morning could be so frustrating?");
+	alert("Level 4! Having fun?!");
 	let lvlFourArray = [];
 	let input4Lvl = promptFor("situation4/question1");
 		lvlFourArray.push(input4Lvl);
@@ -252,6 +256,7 @@ function levelFour(){
 		}
 		if(input4Lvlllll == diceRoll(10)){
 			alert("Congrats! The rolled number matches your number, time for level five!");
+			levelFive();
 		} else if(input4Lvlllll !== diceRoll(10)){
 			alert("Ooooooffff thats rough, numbers did not match. RESTART LEVEL FOUR!");
 			levelFour();
@@ -299,6 +304,7 @@ function levelFive(){
 		}
 		if(input5Lvllll == diceRoll(12)){
 			alert("Congrats! The rolled number matches your number, time for level six!");
+			levelSix();
 		} else if(input5Lvllll !== diceRoll(12)){
 			alert("Ooooooffff thats rough, numbers did not match. RESTART LEVEL FIVE!");
 			levelFive();
@@ -332,14 +338,14 @@ function levelSix(){
 		alert(input6Lvlll + " is the number you chose");
 		if(compareArray(lvlSixArray == [1,2])){
 			alert("Ohhhh snappppp, you chose the best possible actions for this level, you get three attempts instead of one!");
-			levelWinning();
+			bonusThreeAttempts();
 			// right here
 		}
 		if(input6Lvlll == diceRoll(20)){
-			alert("Congrats! The rolled number matches your number, time for CELEBRATION!");
+			alert("The rolled number matches your number, time for CELEBRATION!");
 		} else if(input6Lvlll !== diceRoll(20)){
-			alert("Ooooooffff thats rough, numbers did not match. RESTART TO LEVEL THREE!");
-			levelThree();
+			alert("Ooooooffff thats rough, numbers did not match. RESTART LEVEL!");
+			levelSix();
 		}
 }
 // NEED TO CREATE A LEVELWINNING FUNCTION AS A WINNING PAGE TO FINISH OFF THE GAME. GAME FUNCTIONALITY IS PRACTICALLY FINISHED, NOW TO ENTER THE STORY/TEXT FOR LEVELS 2-END
