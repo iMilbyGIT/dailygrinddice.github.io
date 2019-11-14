@@ -1,13 +1,36 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Daily Grind - ECSSR</title>
-	<link href="dicegame.css" type="text/css" rel="stylesheet">
-	<body>
+	<head>
 		<meta charset="UTF-8">
+		<meta name="description" content="a webpage serving as a basic menu for my javascipt dice game.">
+		<meta name="author" content="Adam Milbrath">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		<link href="dicegame.css" type="text/css" rel="stylesheet">
+	<body>
  		<title>Welcome to "Daily Grind - ECSSR"!</title>
+ 		<br>
+ 		<h1>Welcome to "Daily Grind - ECSSR"!</h1>
+ 		<br>
  		<button type="button" onclick="runGame()">Start Game!</button>
-			<script src="ecssr.js" type="application/javascript"></script>
+ 		<br>
+ 					<div class="row">
+  				<div class="column" style="background-image: url(blackacehearts.jpg);background-size:cover;padding:8px">
+   					 <h2>Level Access Point 1-3</h2>
+   						<p><button type="button" onclick="levelOne()">Level 1!</button></p>
+   						<p><button type="button" onclick="levelTwo()">Level 2!</button></p>
+   						<p><button type="button" onclick="levelThree()">Level 3!</button></p>
+  				</div>
+ 				<div class="column" style="background-image: url(blackacehearts.jpg);background-size:cover;padding:8px">
+  					  <h2>Level Access Point 3-6</h2>
+   						<p><button type="button" onclick="levelFour()">Level 4!</button></p>
+   						<p><button type="button" onclick="levelFive()">Level 5!</button></p>
+   						<p><button type="button" onclick="levelSix()">Level 6!</button></p>
+ 				</div>
+			</div>
+		<script src="ecssr.js" type="application/javascript"></script>
 	</body>
 </head>
+<footer>
+	<audio src="Heroic Intrusion.mp3" controls=""></audio>
+</footer>
 </html>

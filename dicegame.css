@@ -1,3 +1,6 @@
+html{
+    cursor: crosshair;
+}
 body{
 	background-image: url("trippydice.jpg");
 	background-attachment: fixed;
@@ -5,16 +8,42 @@ body{
     background-size: cover;
     background-position: center;
 }
-
 button{
-  background-color: blue;
+  background-image: url("bluedice.gif");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
   position: center;
-  border: none;
   color: white;
-  padding: 15px 32px;
+  padding: 15px;
   text-align: center;
-  text-decoration: none;
   display: inline-block;
   font-size: 16px;
+  height: 75px;
+  width: 90px
 }
+.column{
+  float: center;
+  width: 50%;
+  color: white;
+  position: center;
+  text-align: center;
+  font-size: 32px;
+}
+.row:after{
+  float: center;
+  width: 50%;
+  color: white;
+  position: center;
+  text-align: center;
+  font-size: 32px;
+}
+div{
+
+}
+h1{
+  position: center;
+  color: black;
+  text-align: center;
+  font-size: 32px
 }
