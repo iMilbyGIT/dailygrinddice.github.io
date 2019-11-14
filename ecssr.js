@@ -185,7 +185,7 @@ function levelThree(){
 		lvlThreeArray.push(input3Lvlll);
 	alert("Well, like I said, no shame. Regardless of your answer, just know; your next decision could reset your progress and put you into.. a poop-loop.");
 	alert("Now, back to learning!");
-	 let input3Lvllll = promptFor("For the rest of the afternoon we've been working on practice problems to prep for an upcoming project. I'm SO FRUSTRATED! Why are these called happy numbers when they only make me sad? I've been stuck. I think I should..   1. Copy what the guy sitting next to me has and maybe ask how he did it   2. Take code from w3schools, slap it in, change the var to let, and I'll worry about understanding it later   3. Ask an instructor for help; thats what they're here for!");
+	 let input3Lvllll = promptFor("For the rest of the afternoon I've been working on practice problems to prep for an upcoming project. I'm SO FRUSTRATED! Why are these called happy numbers when they only make me sad? I've been stuck. I think I should..   1. Copy what the guy sitting next to me has and maybe ask how he did it   2. Take code from w3schools, slap it in, change the var to let, and I'll worry about understanding it later   3. Ask an instructor for help; thats what they're here for!");
 		lvlThreeArray.push(input3Lvllll)
 		if(input3Lvllll == 1){
 			alert("Certainly seems like a good option, and in this case, he was able to explain what was holding me up and helped me. But we're all new to this, he could've been worse off than me. Then I'd really be behind!");
@@ -211,46 +211,49 @@ function levelThree(){
 }
 // 
 function levelFour(){
-// Perfect Sequence = 2-3-3-1
+// Perfect Sequence = 2-3-1-3
 	alert("Level 4! Having fun?!");
 	let lvlFourArray = [];
-	let input4Lvl = promptFor("situation4/question1");
+	let input4Lvl = promptFor("I think I understand more about happy numbers and how the function worked to calculate them. This is especially good because the day is just about done! I should..  1. Stay as late as possible and keep cramming cuz KNOWLEDGE IS POWER  2. Make sure I don't have any lingering questions or homework and go home to relax");
 		lvlFourArray.push(input4Lvl);
 		if(input4Lvl == 1){
-			alert("situation4/question1.1");
+			alert("Indeed, knowledge is power. But, that power is nothing if you've overworked yourself.");
 		} else if(input4Lvl == 2){
-			alert("situation4/question1.2");
-		} else if(input4Lvl == 3){
-			alert("situation4/question1.3");
+			alert("This is by far, the best response yet! You need to rest if you want to retain new information");
 		}
-	let input4Lvll = promptFor("situation4/question2");
+	let input4Lvll = promptFor("The worst part about going home is needing to go back outside.. it's sooooo fricken colddddd. Another thing that sucks about going home is all the idiot drivers on the road. Example being, THIS IDIOT NEARLY RAN ME OVER WTFFFF. I decided to..   1. Pick up a chunk of snow and hurl it in their general direction   2. Chase after them and try to get a picture of their plates   3. Say a few snarky comments under my breath and keep walking towards the car.");
 		lvlFourArray.push(input4Lvll);
 		if(input4Lvll == 1){
-			alert("situation4/question2.1 with level reset");
+			alert("This started as a violence-free way to say fu^k you. That's not at all how it played out.");
+			alert("First, the chunk of snow ended up being solid ice with gravel frozen in it.");
+			alert("Second, I ended up having a better arm than I thought. Which would normally be a perk but.. it went right through the back window.");
+			alert("Third, that *idiot* certainly has a vast vocabulary. Being in MKE, I'm sure you know what happens next when he turns around....");
+			alert("We laughed for like 30 minutes straight because he had done the same thing before!!! I know what you're thinking, NO WAY, right?");
+			alert("Well you are right! No way indeed! This is an after thought. He shot your ass. GAMEOVER! REPEAT LEVEL!");
 			levelFour();
 		} else if(input4Lvll == 2){
-			alert("situation4/question2.2");
+			alert("Jeeeeez! Don't make me do that again! I nearly got hit again by somebody else! It's too cold and slippery for that shit!");
 		} else if(input4Lvll == 3){
-			alert("situation4/question2.3");
+			alert("No brainer here. In addition to being the better man, karma kicked in. The idiot got pulled over two blocks down for running a red light.");
 		}
- 	promptFor("situation4/riggedQ3");
- 	alert("situation4/riggedQ3.1");
- 	let input4Lvlll = promptFor("situation4/riggedQ4");
+ 	alert("You feel your phone vibrating");
+ 	let input4Lvlll = promptFor("Your phone keeps vibrating.   1. Keep ignorning it until safely home   2. Glance to see who it is   3. Pull over and answer");
 		lvlFourArray.push(input4Lvlll);
-	alert("situation4/riggedQ4.1");
-	 let input4Lvllll = promptFor("situation4/question5");
+	alert("Hmmmmmm, interesting. Very interesting.");
+	 let input4Lvllll = promptFor("Once you finally get into the driveway another friend calls. Three friends from highschool are in the area and want to get drinks.  1. You invite them over for a little bit instead  2. You decide to go out with them   3. You pull an old man and tell them you are going to lay low");
 		lvlFourArray.push(input4Lvllll)
 		if(input4Lvllll == 1){
-			alert("situation4/question5.1");
+			alert("A fair compromise.  Was able to get a buzz on and not spend an arm and a leg. They didn't stay long either so there's still plenty of evening left!");
 		} else if(input4Lvllll == 2){
-			alert("situation4/question5.2 with level reset");
+			alert("As fun as this is and was, you should've know from the start that this was a receipt for the expected unexpected disaster");
+			alert("GO HOME YOU'RE DRUNK!  Hey drunky, that means GAMEOVER! RESTART LEVEL!")
 			levelFour();
 		} else if(input4Lvllll == 3){
-			alert("situation4/question5.3");
+			alert("I don't know about you, but after a longgggggg day I prefer to relax at home. Friends are important but I'm the kind that prefers to make plans in advance.");
 		}
 	let input4Lvlllll = promptFor("Well.. how's it been? It's time for another dice roll; a 10-sided dice! What number do you want to roll for? (1-10)");
 		alert(input4Lvlllll + " is the number you chose");
-		if(compareArray(lvlFourArray == [2,3,3,1])){
+		if(compareArray(lvlFourArray == [2,3,1,3])){
 			alert("Ohhhh snappppp, you chose the best possible actions for this level, you can bypass this dice roll!");
 			levelFive(); 
 		}
@@ -265,40 +268,41 @@ function levelFour(){
 // 
 function levelFive(){
 // Perfect Sequence = 3-2-1
-	alert("Congrats on making it to Level 5! Who knew a morning could be so frustrating?");
+	alert("Almost done! Here Comes Level 5! Are you even still playing this? Well if you are, just a heads up, roll probability is about to get drastically more frustrating so our story from here on out will have less *fluff*.");
 	let lvlFiveArray = [];
-	let input5Lvl = promptFor("situation5/question1");
+	let input5Lvl = promptFor("Now that you can finally relax. You should..   1. Listen to music   2. Hit up Tinder Chick again   3. Make Dinner");
 		lvlFiveArray.push(input5Lvl);
 		if(input5Lvl == 1){
-			alert("situation5/question1.1");
+			alert("Not a bad choice. As long as we dont have to listen to what you mentioned at the beginning of the game, we're good!");
 		} else if(input5Lvl == 2){
-			alert("situation5/question1.2");
+			alert("This is a much more appropriate time to hit her up. But Tinder chicks will be Tinder chicks. Who knows if she'll respond again or not");
 		} else if(input5Lvl == 3){
 			alert("situation5/question1.3");
 		}
-	let input5Lvll = promptFor("situation5/question2");
+	let input5Lvll = promptFor("After that..   1. Take a shower    2. Play DarkSoulsIII   3. Work a little on my business project");
 		lvlFiveArray.push(input5Lvll);
 		if(input5Lvll == 1){
-			alert("situation5/question2.1 with level reset");
+			alert("Might sound weird but HELL NO. Showers are reserved for the morning. My bedhead gets so bad that I need to shower in the morning again to fix it. Don't waste water! GAMEOVER! RESTART LEVEL!");
 			levelFive();
 		} else if(input5Lvll == 2){
-			alert("situation5/question2.2");
+			alert("This is the ultimate way to take out any frustrations you accumulated through the day.  Its also the best way to get even more frustrated. True gamers understand.");
 		} else if(input5Lvll == 3){
-			alert("situation5/question2.3");
+			alert("Generally a solid choice, but after class my brain is fried. This is not what I want to be doing?");
 		}
-	 let input5Lvlll = promptFor("situation5/question3");
+	 let input5Lvlll = promptFor("Should I..   1. Switch systems and hop on the PS4   2. Play with Google DayDreamVR   3. Continue playing DarkSoulsIII");
 		lvlFiveArray.push(input5Lvlll)
 		if(input5Lvlll == 1){
 			alert("situation5/question3.1");
 		} else if(input5Lvlll == 2){
-			alert("situation5/question3.2 with level reset");
+			alert("VR is awesome except for when you get motion sickness. I'm getting motionsicne.... *pukes*");
+			alert("GAMEOVER! RESTART LEVEL!");
 			levelFive();
 		} else if(input5Lvlll == 3){
-			alert("situation5/question3.3");
+			alert("Solid choice. Lots of time invested here. Don't judge.. one character is level 135 and another is level 387");
 		}
 	let input5Lvllll = promptFor("Well.. how's it been? It's time for another dice roll; a 12-sided dice! What number do you want to roll for? (1-12)");
 		alert(input5Lvllll + " is the number you chose");
-		if(compareArray(lvlFiveArray == [2,3,3])){
+		if(compareArray(lvlFiveArray == [3,2,1])){
 			alert("Ohhhh snappppp, you chose the best possible actions for this level, you can bypass this dice roll!");
 			levelSix(); 
 		}
@@ -313,40 +317,39 @@ function levelFive(){
 // 
 function levelSix(){
 // Perfect Sequence = 1-2
-	alert("Congrats on making it to the final level! Who knew a morning could be so frustrating?");
+	alert("Congrats on making it to the final level! Who knew a day could be so frustrating?");
 	let lvlSixArray = [];
-	let input6Lvl = promptFor("situation6/question1");
+	let input6Lvl = promptFor("I really should get ready for bed but a new episode of Black Clover and My Hero just came out.  1. Watch them both no questions asked #weibforlife   2. Watch only Black Clover   3. Watch only My Hero.");
 		lvlSixArray.push(input6Lvl);
 		if(input6Lvl == 1){
-			alert("situation6/question1.1");
+			alert("Yesssssss. You understand me!");
 		} else if(input6Lvl == 2){
-			alert("situation6/question1.2");
+			alert("I'll watch Black Clover but how could I ONLY WATCH BLACK CLOVER?!");
 		} else if(input6Lvl == 3){
-			alert("situation6/question1.3");
+			alert("I'll watch My Hero but how could I ONLY WATCH MY HERO?!");
 		}
-	let input6Lvll = promptFor("situation6/question2");
+	let input6Lvll = promptFor("Okay, like, I REALLY need to get to bed. Should I..   1. Go to bed   2. Watch anime until I fall asleep   3. Watch one more episode");;
 		lvlSixArray.push(input6Lvll);
 		if(input6Lvll == 1){
-			alert("situation6/question2.1 with level reset");
-			levelSix();
+			alert("I guess.. That is the smart thing to do.");
 		} else if(input6Lvll == 2){
-			alert("situation6/question2.2");
+			alert("FEED ME MORE ANIME");
 		} else if(input6Lvll == 3){
-			alert("situation6/question2.3");
+			alert("MORE ANIME I SAY");
 		}
 	let input6Lvlll = promptFor("Well.. how's it been? It's time for your FINAL dice roll; a 20-sided dice! What number do you want to roll for? (1-20)");
 		alert(input6Lvlll + " is the number you chose");
 		if(compareArray(lvlSixArray == [1,2])){
-			alert("Ohhhh snappppp, you chose the best possible actions for this level, you get three attempts instead of one!");
-			bonusThreeAttempts();
-			// right here
+			alert("Ohhhh snappppp, you chose the best possible actions for this level, you get to bypass the final dice roll!");
+			alert("CONGRATS!!!!! YOU BEAT DAILY GRIND!!!!! Other than satisfaction, you win nothing! Thanks for playing!")
+			promptFor("Please click cancel to exit game.");
 		}
 		if(input6Lvlll == diceRoll(20)){
 			alert("The rolled number matches your number, time for CELEBRATION!");
+			alert("CONGRATS!!!!! YOU BEAT DAILY GRIND!!!!! Other than satisfaction, you win nothing! Thanks for playing!")
+			promptFor("Please click cancel to exit game.");
 		} else if(input6Lvlll !== diceRoll(20)){
 			alert("Ooooooffff thats rough, numbers did not match. RESTART LEVEL!");
 			levelSix();
 		}
 }
-// NEED TO CREATE A LEVELWINNING FUNCTION AS A WINNING PAGE TO FINISH OFF THE GAME. GAME FUNCTIONALITY IS PRACTICALLY FINISHED, NOW TO ENTER THE STORY/TEXT FOR LEVELS 2-END
-// line 170 is where I left off.
